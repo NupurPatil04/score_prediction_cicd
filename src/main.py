@@ -3,7 +3,8 @@ from pydantic import BaseModel
 import joblib
 import pandas as pd
 
-app = FastAPI(title="CRED Score Predictor")
+app = FastAPI(title="CRED Score Predictor (v2)")
+
 model = joblib.load("models/best_model.pkl")
 
 class InputData(BaseModel):
