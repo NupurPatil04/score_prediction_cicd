@@ -28,3 +28,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t score-predictor .
+
+      - name: List Docker images
+        run: docker images
